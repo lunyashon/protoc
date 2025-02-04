@@ -1,4 +1,4 @@
-module github.com/shish-Vital-2709/protoc
+module github.com/lunyashon/protoc
 
 go 1.23.4
 
