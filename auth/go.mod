@@ -1,4 +1,4 @@
-module github.com/lunyashon/protoc
+module github.com/lunyashon/protoc/auth
 
 go 1.23.4
 
