@@ -47,5 +47,5 @@ message TokenRequest {
 }
 
 message TokenResponse {
-    bool access = 1;
+    bool result = 1;
 }
