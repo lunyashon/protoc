@@ -30,7 +30,7 @@ message LoginRequest {
 
 message LoginResponse {
     string token = 1;
-    int32 app_id = 2;
+    int64 app_id = 2;
 }
 
 message AdminRequest {
