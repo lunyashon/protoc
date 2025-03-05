@@ -7,7 +7,6 @@ option go_package = "webservice.sso.v1;protoc";
 service Auth {
     rpc Register (RegisterRequest) returns (RegisterResponse);
     rpc Login (LoginRequest) returns (LoginResponse);
-    rpc Admin (AdminRequest) returns (AdminResponse);
     rpc Token (TokenRequest) returns (TokenResponse);
 }
 
@@ -31,14 +30,6 @@ message LoginRequest {
 message LoginResponse {
     string token = 1;
     int64 app_id = 2;
-}
-
-message AdminRequest {
-    int64 user_id = 1;
-}
-
-message AdminResponse {
-    bool is_admin = 1;
 }
 
 message TokenRequest {
