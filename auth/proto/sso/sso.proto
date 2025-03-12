@@ -15,8 +15,7 @@ message RegisterRequest {
     string password = 2;
     string login = 3;
     string api = 4;
-    string services = 5;
-    // repeated string services = 5;
+    repeated string services = 5;
 }
 
 message RegisterResponse {
@@ -35,8 +34,7 @@ message LoginResponse {
 
 message TokenRequest {
     string token = 1;
-    string services = 2;
-    // repeated string services = 2;
+    repeated string services = 2;
 }
 
 message TokenResponse {
