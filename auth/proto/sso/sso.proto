@@ -29,7 +29,7 @@ message LoginRequest {
 
 message LoginResponse {
     string token = 1;
-    repeated string services_id = 5;
+    repeated int64 services_id = 5;
 }
 
 message TokenRequest {
