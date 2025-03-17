@@ -15,7 +15,7 @@ message RegisterRequest {
     string password = 2;
     string login = 3;
     string api = 4;
-    repeated int64 services = 5;
+    repeated string services = 5;
 }
 
 message RegisterResponse {
@@ -29,7 +29,7 @@ message LoginRequest {
 
 message LoginResponse {
     string token = 1;
-    repeated int64 services_id = 2;
+    repeated string services_id = 2;
 }
 
 message TokenRequest {
